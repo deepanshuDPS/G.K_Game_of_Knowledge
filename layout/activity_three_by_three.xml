@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.Game.Rowdy.GameofKnowledge.ThreeByThreeA"
+    android:background="@drawable/q1">
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/txT1"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:background="#6eebf7"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="A"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/txT2"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:background="#d3d3d3"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="B"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/txT3"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:background="#6eebf7"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="C"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+
+        <Button
+            android:id="@+id/txT4"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="1"
+            android:background="#d3d3d3"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="D"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/txT5"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:background="#6eebf7"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="E"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/txT6"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="1"
+            android:background="#d3d3d3"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="F"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/txT7"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="2"
+            android:background="#6eebf7"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="G"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/txT8"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:background="#d3d3d3"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text="H"
+            android:textSize="25dp"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/txT9"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="2"
+            android:background="#00000000"
+            android:minHeight="117dip"
+            android:minWidth="117dip"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="#000000" />
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_column="0"
+        android:textSize="27dp"
+        android:background="@drawable/restart"
+        android:id="@+id/restart"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tableLayout"
+        android:layout_alignBottom="@+id/tableLayout"
+        android:onClick="restart" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout"
+        android:background="#d3d3d3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <TableRow
+            android:layout_height="wrap_content"
+            android:background="@drawable/timer"
+            android:layout_width="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="TIMER : "
+                android:textSize="30dp"
+                android:id="@+id/textView"
+                android:layout_column="0"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <Chronometer
+                android:id="@+id/chronometer"
+                android:format="%s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:textSize="30dp"
+                android:layout_alignTop="@+id/textView"
+                android:layout_alignEnd="@+id/gridLayout1"
+                android:layout_marginEnd="34dp"
+                android:textIsSelectable="true" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text"
+        android:layout_below="@+id/gridLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:textColor="#000000" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/pause"
+        android:background="@drawable/pause"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="pause"/>
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/help"
+        android:background="@drawable/help"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:onClick="help"/>
+</RelativeLayout>

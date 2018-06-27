@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lockb">
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+
+
+            <TextView
+                android:id="@+id/howto"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_column="0"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="225dp"
+                android:text="HOW TO \nSOLVE =>"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_column="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="200dp"
+                android:text="3X3- Color level\n Align Color Horizontally In \n Ascending order According to \nFirst alphabet of Colors&apos; name"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imv"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_column="2"
+                android:clickable="false"
+                android:layout_marginBottom="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="150dp" />
+            <LinearLayout
+                android:layout_column="3"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/cont"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/cont"
+                    android:layout_marginBottom="10dp"/>
+
+                <Button
+                    android:id="@+id/rest"
+                    android:layout_width="200dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/restart1"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    </HorizontalScrollView>
+</RelativeLayout>

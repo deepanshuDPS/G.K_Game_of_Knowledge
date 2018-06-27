@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/lockb">
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:background="@drawable/resume"
+        android:id="@+id/resume"
+        android:layout_marginBottom="66dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/tableLayout3"
+        android:layout_marginBottom="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/resume">
+
+        <TableRow>
+            <TextView
+                android:text="Minimum\n Steps till now :"
+                android:textSize="20dp"
+                android:layout_column="0"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:typeface="serif"
+                android:textColor="#83fab6" />
+            <TextView
+                android:text="\nSteps"
+                android:id="@+id/st"
+                android:textSize="25dp"
+                android:layout_column="1"
+                android:textAlignment="center"
+                android:textColor="#5efc49"
+                android:typeface="monospace" />
+        </TableRow>
+
+    </TableLayout>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/imv"
+        android:layout_marginBottom="73dp"
+        android:layout_above="@+id/tableLayout3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

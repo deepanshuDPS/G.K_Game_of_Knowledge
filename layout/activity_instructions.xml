@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.Game.Rowdy.GameofKnowledge.Instructions"
+    android:background="@drawable/q5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="INSTRUCTIONS"
+        android:id="@+id/textView6"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="27dp"
+        android:shadowColor="#000000"
+        android:textColor="#8df3fa" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="400dip"
+        android:id="@+id/scrollView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:fillViewport="false">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <TextView
+                    android:text="\t\tAbout\t\tthe\t\tGame"
+                    android:textColor="#f3fb05"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/instructions"
+                    android:textColor="#fffc9f"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Rules"
+                    android:textColor="#ffff00"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textColor="#fffc9f"
+                    android:textSize="17dp"
+                    android:text="@string/instructions1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textColor="#fffc9f"
+                    android:text="@string/instructions2"
+                    android:textSize="17dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:width="110dp"
+                android:height="42dp"
+                android:id="@+id/gotit"
+                android:text="Got It"
+                android:textStyle="bold"
+                android:background="@drawable/buttonshape"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#00ffff"/>
+
+            <Button
+                android:width="110dp"
+                android:height="42dp"
+                android:id="@+id/notgotit"
+                android:text="Not Got It"
+                android:textStyle="bold"
+                android:background="@drawable/buttonshape"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#00ffff"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

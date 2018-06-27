@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lockb">
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/resume"
+        android:id="@+id/resume"
+        android:layout_marginBottom="106dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="@drawable/restart1"
+        android:id="@+id/restart"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/resume"
+        android:layout_alignStart="@+id/resume" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/tableLayout3"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/restart"
+        android:layout_centerHorizontal="true">
+
+        <TableRow>
+            <TextView
+                android:text="Best Time :"
+                android:textSize="25dp"
+                android:layout_column="0"
+                tools:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textStyle="normal|bold"
+                android:typeface="serif"
+                android:textColor="#83fab6" />
+            <TextView
+                android:text="Time"
+                android:id="@+id/st"
+                android:textSize="25dp"
+                android:layout_column="1"
+                tools:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textColor="#5efc49"
+                android:typeface="monospace" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="Total Marks :   "
+                android:textSize="25dp"
+                android:layout_column="0"
+                tools:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:typeface="serif"
+                android:textColor="#83fab6" />
+            <TextView
+                android:text="Marks"
+                android:id="@+id/markss"
+                android:textSize="25dp"
+                android:layout_column="1"
+                tools:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:textColor="#5efc49"
+                android:typeface="monospace" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:text="PAUSED"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:id="@+id/ps"
+        tools:textColor="?android:attr/colorFocusedHighlight"
+        android:textStyle="normal|bold"
+        tools:textStyle="normal|bold"
+        android:typeface="sans"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/tableLayout3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f19132" />
+
+
+</RelativeLayout>

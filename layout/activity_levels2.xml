@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.Game.Rowdy.GameofKnowledge.Levels2"
+    android:background="@drawable/black">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:background="@drawable/fivec"
+                android:id="@+id/clevel2"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Align Color Horizontally\n In Ascending  order \n  According to \n First alphabet of \n Colors&apos; name"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:text="LOCKED!"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/fiven"
+                android:id="@+id/nlevel2"
+                android:layout_column="0"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Align The Numbers \n   Horizontally  In Ascending \n Order"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:text="LOCKED!"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:background="@drawable/fivea"
+                android:id="@+id/alevel2"/>
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=" Align The Alphabets \n  Horizontally In Ascending \n Order"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/text2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#00000000" />
+</RelativeLayout>
