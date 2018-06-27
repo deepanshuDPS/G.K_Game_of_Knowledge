@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Game.Rowdy.GameofKnowledge">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/gk"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity android:name="com.Game.Rowdy.GameofKnowledge.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.Game.Rowdy.GameofKnowledge.GameLevels" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.ThreeByThreeN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.ThreeByThreeC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.ThreeByThreeA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Levels"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Questions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Scoreboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FourbyfourC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FourbyfourN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FourbyfourA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Levels1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FivebyfiveC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FivebyfiveN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.FivebyfivA"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Levels2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.SixbysixC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Instructions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.SixbysixN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.SixbysixO"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Levels3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.SharePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Tablevels"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Picp3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Picp4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Picp5"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.Picp6"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.Game.Rowdy.GameofKnowledge.McqQ"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
